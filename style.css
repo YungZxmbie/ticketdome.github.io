@@ -195,12 +195,12 @@ body{
 .content p{
     font-size: 20px;
     font-weight: 600;
-    color: #fff;
+    color: #000;
 }
 .content h1{
     font-size: 38px;
     font-weight: 600;
-    color: #fff;
+    color: #000;
 }
 .content span{
     color: #ff3753;
