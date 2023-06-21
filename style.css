@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 body{
-    background: rgb(0, 0, 0);
-    overflow-x: hidden;
+    overflow: hidden;
     color: #000;
+   background-image: url('./af4f2688897691.5dfbd24137b4a.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+    
 }
 .navbar{
     justify-content: space-evenly;
@@ -19,13 +24,10 @@ body{
     color: #000;
 }
 .logo{
-    font-weight: 800;
     align-items: center;
     display: flex;
     margin-right: 3rem;
     color: rgb(191, 209, 27);
-    font-weight: 800;
-    font-size: 20px;
     
 }
 .navbar ul{
@@ -74,6 +76,7 @@ body{
     border-radius: 10px;
     justify-content: center;
 }
+
 .ticket{
     position: relative;
     align-items: center;
@@ -83,7 +86,12 @@ body{
     margin-top: 23px;
     border-radius: 10px;
     background: #000;
+    border: 1px solid white;
 
+}
+
+.ticket:hover{
+    backdrop-filter: blue;
 }
 .form-container{
     width: 100%;
@@ -131,3 +139,200 @@ body{
     font-synthesis: 14px;
     margin-top: 10px;
 }
+.card{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    flex-direction: column;
+
+}
+.btn{
+    padding: 15px;
+    background: #53a3ff;
+    color: white;
+    font-size: 12px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 80px;
+    margin: 10px auto 0;
+    padding: 8px;
+    justify-content: baseline;
+    align-items: baseline;
+    top: 900px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./af4f2688897691.5dfbd24137b4a.png');
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: absolute;
+}
+
+.content{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.content p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.content h1{
+    font-size: 38px;
+    font-weight: 600;
+    color: #fff;
+}
+.content span{
+    color: #ff3753;
+}
+.button{
+    background: transparent;
+    outline: none;
+    border: 2px solid #ffffff;
+    padding: 12px 25px;
+    color: #fff;
+    margin-top: 1rem;
+    cursor: progress;
+    text-decoration: none;
+}
+
+.launch-time {
+    display: flex;
+}
+.launch-time div{
+    flex-basis: 100px;
+}
+.launch-time div p{
+    font-size: 22px;
+    margin-right: -14px;
+    color: #fff;
+}
+.launch-time div span{
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff; 
+}
+.rocket{
+    width: 200px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+p{
+    padding: 2px 25px;
+    margin-top: 18px;
+}
+
+@keyframes rocket{
+
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .container .content p{
+    font-size: 12px;
+    float: start;
+    color: #000;
+   }
+   .container .content h1{
+    font-size: 13px;
+    float: start;
+    color: #000;
+   }
+   .launch-time div p{
+    font-size: 9px;
+    color: #000;
+   }
+}
+
+@media (min-width: 576px) { 
+    .container .content p{
+        font-size: 20px;
+       }
+       .container .content h1{
+        font-size: 22px;
+        float: start;
+
+       }
+       .launch-time div p{
+        font-size: 10px;
+
+       }
+ }
+
+@media (min-width: 768px) { 
+    .container .content p{
+        font-size: 20px;
+        float: start;
+       }
+       .container .content h1{
+        font-size: 26px;
+        float: start;
+       }
+       .launch-time div p{
+        font-size: 13px;
+       }
+ }
+
+@media (min-width: 992px) {
+    .container .content p{
+        font-size: 22px;
+        float: start;
+
+       }
+       .container .content h1{
+        font-size: 28px;
+        float: start;
+   
+       }
+       .launch-time div p{
+        font-size: 15px;
+   
+       }
+ }
+
+@media (min-width: 1200px) {
+    .container .content p{
+        font-size: 30px;
+        float: start;
+       }
+       .container .content h1{
+        font-size: 38px;
+        float: start;
+       }
+       .launch-time div p{
+        font-size: 20px;
+       }
+ }
+
+@media (min-width: 1400px) {
+    .container .content p{
+        font-size: 38px;
+        float: start;
+       }
+       .container .content h1{
+        font-size: 42px;
+        float: start;
+       }
+       .launch-time div p{
+        font-size: 22px;
+       } 
+ }
+
